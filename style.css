@@ -1,0 +1,125 @@
+* {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  background: radial-gradient(transparent, black), url("./images/back.png");
+  box-shadow: inset 0 0 5em 1em #000;
+}
+
+/* header */
+
+header {
+  background: radial-gradient(transparent, black), #4a4a4a;
+  padding: 50px;
+  z-index: 3;
+}
+
+.counter-val {
+  padding: 30px 35px;
+  display: inline-block;
+  border: 1px solid white;
+  border-radius: 100px;
+  margin-right: 5px;
+}
+.counter-val p {
+  margin: 0px;
+  color: white;
+}
+
+.counter-val p.val {
+  color: white;
+  font-size: 30px;
+}
+
+.counter-val p.type {
+  color: #b7b7b7;
+  font-size: 10px;
+}
+
+/* content */
+
+.content {
+  width: 100%;
+  position: absolute;
+  color: white;
+}
+
+.content .main-title {
+  position: relative;
+  margin: 90px 0 0 0;
+  font-size: 50px;
+  font-weight: lighter;
+}
+
+.content .sub-title {
+  color: #b7b7b7;
+  font-size: 15px;
+  margin: auto;
+  margin-top: 20px;
+  max-width: 750px;
+}
+
+.content .signUp-form {
+  margin-top: 80px;
+  position: relative;
+  right: 50px;
+}
+
+::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+.signUp-form input#email {
+  width: 300px;
+  background: none;
+  color: white;
+  border: 2px white solid;
+  border-right: none;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: left;
+  padding: 10px;
+}
+
+.signUp-form #signUp-btn {
+  background: white;
+  color: #4a4a4a;
+  font-weight: bold;
+  width: 100px;
+  padding: 10px;
+  border: none;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  cursor: pointer;
+  position: absolute;
+}
+
+a .icon {
+  width: 50px;
+  height: auto;
+  background: none;
+  margin-top: 40px;
+}
+
+@media (max-width: 420px) {
+  .signUp-form input#email {
+    width: 150px;
+    background: none;
+    color: #b7b7b7;
+    border: 2px #b7b7b7 solid;
+    border-right: none;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: left;
+    padding: 10px;
+  }
+}
